@@ -10,6 +10,5 @@ int main()
     cout << "Vvedite chislo 2: ";
     cin >> b;
     cout << "Resultat: " << a+b << endl;
-    system("pause");
     return 0;
 }

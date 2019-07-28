@@ -10,6 +10,5 @@ int main()
     for (int i=0;i<stars;i++)
         cout << "*";
     cout << endl;
-    system("pause");
     return 0;
 }

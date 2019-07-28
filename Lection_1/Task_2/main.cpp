@@ -18,6 +18,5 @@ int main()
     if (z<1000)
     cout << "Rabotai bolshe";
     cout << "...no ti molodec\n";
-    system("pause");
     return 0;
 }

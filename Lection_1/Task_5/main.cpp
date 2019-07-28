@@ -10,6 +10,5 @@ int main()
     for (int i=0;i<=chislo;i++)
         cout << i << " ";
     cout << endl;
-    system("pause");
     return 0;
 }

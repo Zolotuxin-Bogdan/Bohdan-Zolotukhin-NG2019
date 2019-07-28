@@ -22,6 +22,5 @@ int main()
     cout << "Resultat: " << first_val * second_val << endl;
     if ((operatorr!=1) && (operatorr!=2) && (operatorr!=3) && (operatorr!=4))
     cout << "Error! Vveden nepravilnyi operator...\n\n";
-    system("pause");
     return 0;
 }
