@@ -19,4 +19,5 @@ int main()
     cout << "Rabotai bolshe";
     cout << "...no ti molodec\n";
     return 0;
+
 }
