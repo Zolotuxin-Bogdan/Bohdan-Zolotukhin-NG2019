@@ -11,4 +11,5 @@ int main()
     cin >> b;
     cout << "Resultat: " << a+b << endl;
     return 0;
+
 }
