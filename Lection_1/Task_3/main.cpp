@@ -23,4 +23,5 @@ int main()
     if ((operatorr!=1) && (operatorr!=2) && (operatorr!=3) && (operatorr!=4))
     cout << "Error! Vveden nepravilnyi operator...\n\n";
     return 0;
+
 }
