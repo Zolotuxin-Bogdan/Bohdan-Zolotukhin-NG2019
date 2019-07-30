@@ -17,10 +17,13 @@ int main()
     if (operatorr==2)
     cout << "Resultat: " << first_val - second_val << endl;
     if (operatorr==3)
+        if (second_val!=0)
     cout << "Resultat: " << first_val / second_val << endl;
+        else
+    cout << "Error! Delenie na 0 nevozmojno...\n\n";
     if (operatorr==4)
     cout << "Resultat: " << first_val * second_val << endl;
-    if ((operatorr!=1) && (operatorr!=2) && (operatorr!=3) && (operatorr!=4))
+    if ((operatorr>4) || (operatorr<1))
     cout << "Error! Vveden nepravilnyi operator...\n\n";
     return 0;
 
