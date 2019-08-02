@@ -4,24 +4,25 @@ using namespace std;
 
 int main()
 {
-    int razmer,razUp,razDown = 0;
+    int razmer = 0;
+    int stars = 1;
     cout << "VVedite razmer elochki: ";
     cin >> razmer;
-    razDown = razUp = razmer;
+
     for (int i = 0;i<razmer;i++)
     {
-        for(int i = 1;i<=razUp;i++)
+        for(int width = 0;width<=razmer-i;width++)
         {
-        if ((i>=razDown) && (i<=razUp))
-        cout << "*";
-        else
         cout << " ";
         }
+       for(int g = 0;g<+stars;g++)
+       {
+        cout << "*";
+       }
+       stars+=2;
     cout << endl;
-    razDown--;
-    razUp++;
     }
-    for (int i=1;i<razmer;i++)
+    for(int i = 0;i<=razmer;i++)
         cout << " ";
     cout << "*";
     return 0;
