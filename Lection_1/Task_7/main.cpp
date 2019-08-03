@@ -5,26 +5,25 @@ using namespace std;
 int main()
 {
     int razmer = 0;
-    int stars = 1;
+    int pos = 0;
+    int width = 0;
     cout << "VVedite razmer elochki: ";
     cin >> razmer;
 
-    for (int i = 0;i<razmer;i++)
+    for (pos = 1;pos<=razmer;pos++)
     {
-        for(int width = 0;width<=razmer-i;width++)
+        for(width = 0;width<razmer-pos;width++)
         {
-        cout << " ";
+            cout << " ";
         }
-       for(int g = 0;g<+stars;g++)
-       {
-        cout << "*";
-       }
-       stars+=2;
+        for(width = 0;width<pos*2-1;width++)
+        {
+            cout << "*";
+        }
     cout << endl;
     }
-    for(int i = 0;i<=razmer;i++)
+    for(pos = 1;pos<razmer;pos++)
         cout << " ";
     cout << "*";
     return 0;
-
 }
