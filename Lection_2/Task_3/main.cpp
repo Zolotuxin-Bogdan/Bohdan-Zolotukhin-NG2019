@@ -9,6 +9,11 @@ int main()
     do
     {
         cin >> mass[numb];
+        while (mass[numb]%2==0 && mass[numb]!=0)
+        {
+            cout << "Error! Vvedeno chetnoe chislo...\nVvedite chislo zanovo\n";
+            cin >> mass[numb];
+        }
         numb++;
     } while (numb<20 && mass[numb-1]!=0);
 
