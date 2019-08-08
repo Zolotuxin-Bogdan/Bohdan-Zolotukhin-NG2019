@@ -20,9 +20,10 @@ int main()
             cin >> dengi;
             cards[nomer-1]+=dengi;
             for(int i=0;i<10;i++)
+            {
                 cout << cards[i] << " ";
-            for(int i=0;i<10;i++)
                 summa+=cards[i];
+            }
             cout << "\nSumma: "<< summa <<"\n\n";
             summa=0;
         }
