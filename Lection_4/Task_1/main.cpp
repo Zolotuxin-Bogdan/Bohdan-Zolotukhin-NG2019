@@ -4,14 +4,10 @@ using namespace std;
 
 int sumAllNumbers(int ins)
 {
-    int summ = 0;
     while (ins!=0)
     {
-        summ+=ins;
-        ins--;
-        sumAllNumbers(ins);
+        return sumAllNumbers(ins/10) + ins % 10;
     }
-    return summ;
 }
 
 int main()
