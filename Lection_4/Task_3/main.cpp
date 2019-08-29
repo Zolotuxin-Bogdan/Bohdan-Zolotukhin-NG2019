@@ -2,9 +2,9 @@
 
 using namespace std;
 
-void showAllCards(float* carts)
+void showAllCards(float* carts, int arrSize)
 {
-    for(int i=0;i<10;i++)
+    for(int i=0;i<arrSize;i++)
     {
         cout << carts[i] << " ";
     }
@@ -12,13 +12,13 @@ void showAllCards(float* carts)
 
 void addMoney(float* carts, int nom, float kolvo)
 {
-   carts[nom-1]+=kolvo;
+    carts[nom-1]+=kolvo;
 }
 
-void summa(float* carts)
+void summa(float* carts, int arrSize)
 {
     float sum = 0;
-    for(int i=0;i<10;i++)
+    for(int i=0;i<arrSize;i++)
     {
         sum+=carts[i];
     }
@@ -30,6 +30,8 @@ int askNomer()
     int nomer;
     cout << "Vvedi nomer kartochki: ";
     cin >> nomer;
+    cin.clear();
+    cin.sync();
     return nomer;
 }
 
@@ -51,6 +53,8 @@ int askKolvo()
     float kolvo;
     cout << "Skolko polozhit: ";
     cin >> kolvo;
+    cin.clear();
+    cin.sync();
     return kolvo;
 }
 
@@ -67,8 +71,8 @@ int main()
         {
             dengi=askKolvo();
             addMoney(cards, nomer, dengi);
-            showAllCards(cards);
-            summa(cards);
+            showAllCards(cards,10);
+            summa(cards,10);
         }
     }
     return 0;
