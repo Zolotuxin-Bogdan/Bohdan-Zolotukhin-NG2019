@@ -8,16 +8,18 @@ int main()
     cout << "Vvedite stroky: ";
     cin.getline(stroka,100);
 
-    char alphabet[26];
+    char alphabet[27]={"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
     int counter[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     int i = 0, i2 = 0;
     while (stroka[i]!='\0')
     {
-        for(i2 = 0;i2<26;i2++)
-        if((stroka[i] == 'a'+i2) || (stroka[i] == 'A'+i2))
+        if(stroka[i] >='a' && stroka[i] <='z')
         {
-            alphabet[i2]='A'+i2;
-            counter[i2]++;
+            counter[stroka[i]-'a']++;
+        }
+        if(stroka[i] >='A' && stroka[i] <='Z')
+        {
+            counter[stroka[i]-'A']++;
         }
         i++;
     }
