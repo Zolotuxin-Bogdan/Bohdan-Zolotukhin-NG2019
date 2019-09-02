@@ -29,7 +29,7 @@ void penjok(int razmer)
     cout << "*";
 }
 
-int main()
+void draw_tree()
 {
     int sizeElka = 0;
     cout << "Vvedite razmer elochki: ";
@@ -40,5 +40,10 @@ int main()
         zvezdochki(i);
     }
     penjok(sizeElka);
+}
+
+int main()
+{
+    draw_tree();
     return 0;
 }
